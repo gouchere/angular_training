@@ -1,0 +1,6 @@
+<div class="face-snap-card" [ngClass]="{ snapped: faceSnap.isSnap }">
+  <h2>({{ numero }}) {{ faceSnap.title | titlecase }}</h2>
+  <p>{{ faceSnap.description }}</p>
+  <p *ngIf="faceSnap.location">Photo prise à {{ faceSnap.location }}</p>
+  <button (click)="onViewFaceSnap()">VIEW</button>
+</div>
